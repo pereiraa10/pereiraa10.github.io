@@ -114,10 +114,10 @@ params:
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    showBrandLogo: false # Show brand logo in nav bar | default is true
     # brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
     disableSearch: false
-    # searchPlaceholder: "Search"
+    searchPlaceholder: "Search"
     stickyNavBar:
       enable : true
       showOnScrollUp : true
@@ -134,36 +134,37 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Ariana."
+    title: "Ariana"
     subtitle: "ML Engineer, Musician, and Creative Problem-solver"
     content: "MSc student in Sound & Music Computing at UPF’s Music Technology Group, focused on music perception, machine learning applications for sound and music information retrieval."
-    image: /images/hero.svg
+    image: /images/Headshot0825-6827.jpg
     bottomImage:
       enable: true
     roundImage: true # Make hero image circular | default false
-    button:
-      enable: true
-      name: "Resume"
-      url: "#"
-      download: true
-      newPage: false
+    # button:
+    #   enable: true
+    #   name: "Resume"
+    #   url: "#"
+    #   download: true
+    #   newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/pereiraa10
-        - icon: fab fa-x-twitter
-          url: https://example.com
+        # - icon: fab fa-x-twitter
+        #   url: https://example.com
       customIcons:
-        - icon: /fav.png
+        - icon: /images/LinkedIn.png
           url: "https://www.linkedin.com/in/arianapereira13/"
+
 
   # About
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/Headshot0825-7738.jpg"
     content: |-
-      I’m a data engineer, musician, and creative problem-solver passionate about developing transformative technologies in the field of music. I’m currently pursuing a master’s in Sound and Music Computing at Universitat Pompeu Fabra, building on my machine learning foundation from Cornell University to explore state-of-the-art music information retrieval methods.  
+      I’m a machine learning engineer, musician, and creative problem-solver passionate about developing transformative technologies in the field of music. I’m currently pursuing a master’s in Sound and Music Computing at Universitat Pompeu Fabra, building on my machine learning foundation from Cornell University to explore state-of-the-art music information retrieval methods.  
       
       My research focuses on how the brain encodes music and how musical enculturation shapes perception and preferences. I also work on exploring machine learning methods for intuitive musical data management. I aim to build technologies that contribute to a more intuitive, ethical and equitable landscape for artist discoverability.
       
@@ -174,11 +175,16 @@ params:
       enable: true
       title: "Here are a few technologies I work with:"
       items:
-        - "Programming & Data Analysis: Python, Excel, SQL, Tableau, Qliksense, Alteryx, Matplotlib"
-        - "Machine Learning: Pytorch, scikit-learn, TensorFlow, Librosa, Essentia"
-        - "Data Analysis: NumPy, Pandas, SciPy"
-        - "Music & Audio Tools: LogicPro, GarageBand, MIDI Plug-ins, Melodyne"
-        - "Instruments: Piano, Voice, Ukulele, and Advanced Music Theory"
+        - "Programming & Data Analysis: 
+            Python, Excel, SQL, Tableau, Qliksense, Alteryx, Matplotlib"
+        - "Machine Learning: 
+            Pytorch, scikit-learn, TensorFlow, Librosa, Essentia"
+        - "Data Analysis: 
+            NumPy, Pandas, SciPy"
+        - "Music & Audio Tools: 
+            LogicPro, GarageBand, MIDI Plug-ins, Melodyne"
+        - "Instruments: 
+            Piano, Voice, Ukulele, and Advanced Music Theory"
 
   # Experience
   experience:
@@ -284,28 +290,6 @@ params:
         #   enable: true
         #   url: "https://example.com"
 
-  # Conferences & Workshops Attended
-  achievements:
-    enable: true
-    title: "Conferences & Workshops Attended"
-    items:
-      - title: DCASE 2025 - Detection and Classification of Acoustic Scenes and Events - Organizing Committee
-        content: Attended lectures and poster sessions by pioneers in the field of acoustical detection and facilitated registration.
-        # url: https://example.com
-        image: /images/achievement.jpg
-      - title: 2025 ACM Europe School on Recommender Systems - Student Participant
-        content: Developed case study for a recipe recommendation system, reflecting on lecture topics covered both algorithmic and ethical.
-        image: /images/achievement.jpg
-      - title: UPF Generative AI Music Workshop - 2025
-        content: Constructed an AI application to generate piano accompaniments for speech audio. 
-        url: "https://github.com/hoggl-dsp/Songify"
-        image: /images/achievement.jpg
-      # - title: Microsoft Imagine Runner
-      #   content: We are developed a product which can help others.
-      # - title: Google Summer of Code
-      #   content: Contributed to a open source project.
-      #   url: https://example.com
-
   # projects
   projects:
     enable: true
@@ -313,48 +297,99 @@ params:
     items:
       - title: ML Song Segmentation Classification
         content: An analysis of different Machine Learning algorithms used for song segmentation classification.
-        image: /images/projects/profile.png
+        image: /images/ML_classifier_ex.png
         featured:
-          name: Demo
+          name: Repo
           link: https://github.com/pereiraa10/ML-Song-Segmentation-Classification
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Python"
+          - "Machine Learning"
+          - "Music Information Retreival"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+            url: https://github.com/pereiraa10/ML-Song-Segmentation-Classification
+          # - icon: fab fa-twitter
+          #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+      - title: UPF ML for Sound and Music 
+        content: Experiments with different ML algorithms to perform genre classification; written and run on publically available datasets (MagnaTagATune) for the Master's Program in Sound and Music Computing at Universitat Pompeu Fabra in Barcelona, Spain.
         image: /images/projects/converter.jpg
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+          name: Repo
+          link: https://github.com/pereiraa10/UPF-ML-for-Sound-and-Music
         badges:
-          - "Django"
-          - "Bootstrap"
+          - "Python"
+          - "Machine Learning"
+          - "Music Information Retreival"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/pereiraa10/UPF-ML-for-Sound-and-Music
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+      - title: Songify
+        content: A generative music system for adding accompaniment to voice, particularly for spoken word, developed during the Generative Music AI Workshop (2025) in the Music Technology Group at Universitat Pompeu Fabreu in Barcelona.
+        image: /images/songify.png
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+          name: Repo
+          link: https://github.com/hoggl-dsp/Songify/tree/main/songify
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Python"
+          - "Generative AI"
+          - "Music Information Retreival"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/hoggl-dsp/Songify/tree/main/songify
+
+      - title: Cornell ML for Data Science 
+        content: Over the course of 14-weeks, I completed 7 python-based projects to demonstrate command of machine learning concepts.
+        image: /images/cornell_cert.png
+        featured:
+          name: Repo
+          link: https://github.com/pereiraa10/Cornell-ML-for-Data-Science-Finished-Projects
+        badges:
+          - "Python"
+          - "Machine Learning"
+          - "Data Science"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/pereiraa10/Cornell-ML-for-Data-Science-Finished-Projects
+
+      - title: SigMA IDyOMpy
+        content: Exploring the python implementation of IDyOM by Guilhem Marion to be used in a project about cortical encoding of musical surprisal.
+        image: /images/IDyOMpy.jpeg
+        featured:
+          name: Repo
+          link: https://github.com/pereiraa10/SigMA-IDyOMpy
+        badges:
+          - "Python"
+          - "Machine Learning"
+          - "Musical Perception"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/pereiraa10/SigMA-IDyOMpy
+
+ # Conferences & Workshops Attended
+  achievements:
+    enable: true
+    title: "Conferences & Workshops"
+    items:
+      - title: DCASE 2025 - Detection and Classification of Acoustic Scenes and Events - Organizing Committee
+        content: Attended lectures and poster sessions by pioneers in the field of acoustical detection and facilitated registration.
+        url: https://dcase.community/workshop2025/index
+        image: /images/dcase2025_bcn_image.png
+      - title: 2025 ACM Europe School on Recommender Systems - Student Participant
+        content: Developed case study for a recipe recommendation system, reflecting on lecture topics covered both algorithmic and ethical.
+        image: /images/recsys.jpeg
+      - title: UPF Generative AI Music Workshop - 2025
+        content: Constructed an AI application to generate piano accompaniments for speech audio. 
+        url: "https://github.com/hoggl-dsp/Songify"
+        image: /images/Gen_AI_Wksp.jpeg
+      # - title: Microsoft Imagine Runner
+      #   content: We are developed a product which can help others.
+      # - title: Google Summer of Code
+      #   content: Contributed to a open source project.
+      #   url: https://example.com
 
   #Contact
   contact:
@@ -362,7 +397,7 @@ params:
     # title: "Custom Name"
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
     btnName: Mail me
-    btnLink: mailto:gurusabarisha@gmail.com
+    btnLink: mailto:arianapereira13@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -378,11 +413,11 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      github: https://github.com/pereiraa10
+      linkedin: https://www.linkedin.com/in/arianapereira13/
+      # twitter: https://twitter.com
+      instagram: https://www.instagram.com/ari__inez/
+      # facebook: https://facebook.com
 
   # List pages like blogs and posts
   listPages:
