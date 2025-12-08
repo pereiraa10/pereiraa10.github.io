@@ -312,7 +312,7 @@ params:
     # title: "Custom Name"
     items:
       - title: ML Song Segmentation Classification
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        content: An analysis of different Machine Learning algorithms used for song segmentation classification.
         image: /images/projects/profile.png
         featured:
           name: Demo
