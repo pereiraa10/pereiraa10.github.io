@@ -316,7 +316,7 @@ params:
         image: /images/projects/profile.png
         featured:
           name: Demo
-          link: https://hugo-profile.netlify.app
+          link: https://github.com/pereiraa10/ML-Song-Segmentation-Classification
         badges:
           - "Hugo"
           - "Bootstrap"
