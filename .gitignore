@@ -20,3 +20,4 @@ hugo.linux
 .hugo_build.lock
 
 .prettierignore
+*.DS_Store
