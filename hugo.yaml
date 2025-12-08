@@ -28,24 +28,24 @@ markup:
     renderer:
       unsafe: true
 
-Menus:
-  main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+# Menus:
+#   main:
+    # - identifier: blog
+    #   name: Blog
+    #   title: Blog posts
+    #   url: /blogs
+    #   weight: 1
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
     #   name: Dropdown
     #   weight: 3
-    # - identifier: dropdown1
+    # # - identifier: dropdown1
     #   title: example dropdown 1
     #   name: example 1
     #   url: /#
@@ -135,7 +135,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Ariana"
-    subtitle: "ML Engineer, Musician, and Creative Problem-solver"
+    subtitle: "ML Engineer, Musician, and Data Scientist"
     content: "MSc student in Sound & Music Computing at UPF’s Music Technology Group, focused on music perception, machine learning applications for sound and music information retrieval."
     image: /images/Headshot0825-6827.jpg
     bottomImage:
@@ -147,15 +147,18 @@ params:
     #   url: "#"
     #   download: true
     #   newPage: false
+
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/pereiraa10
-        # - icon: fab fa-x-twitter
-        #   url: https://example.com
-      customIcons:
-        - icon: /images/LinkedIn.png
-          url: "https://www.linkedin.com/in/arianapereira13/"
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/arianapereira13/
+        - icon: fab fa-tiktok
+          url: https://www.tiktok.com/@ari__inez
+      # customIcons:
+      #   - icon: /images/LinkedIn.png
+      #     url: "https://www.linkedin.com/in/arianapereira13/"
 
 
   # About
@@ -176,7 +179,13 @@ params:
       title: "Here are a few technologies I work with:"
       items:
         - "Programming & Data Analysis: 
-            Python, Excel, SQL, Tableau, Qliksense, Alteryx, Matplotlib"
+            Python, 
+            Excel, 
+            SQL, 
+            Tableau, 
+            Qliksense, 
+            Alteryx, 
+            Matplotlib"
         - "Machine Learning: 
             Pytorch, scikit-learn, TensorFlow, Librosa, Essentia"
         - "Data Analysis: 
@@ -277,6 +286,7 @@ params:
         school:
           name: "Montclair State University"
           url: "https://www.montclair.edu/"
+        date: "Fall 2017 - Spring 2021"
         GPA: "3.9 out of 4.0 - Dean's List"
         # featuredLink:
         #   enable: true
@@ -285,6 +295,7 @@ params:
         school:
           name: "Randolph High School"
           url: "https://www.rtnj.org/our-schools/randolph-high-school"
+        date: "Fall 2013-2017"
         GPA: "3.8 out of 4.0"
         # featuredLink:
         #   enable: true
@@ -304,7 +315,7 @@ params:
         badges:
           - "Python"
           - "Machine Learning"
-          - "Music Information Retreival"
+          - "Music Information Retrieval"
         links:
           # - icon: fa fa-envelope
           #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
@@ -322,21 +333,21 @@ params:
         badges:
           - "Python"
           - "Machine Learning"
-          - "Music Information Retreival"
+          - "Music Information Retrieval"
         links:
           - icon: fab fa-github
             url: https://github.com/pereiraa10/UPF-ML-for-Sound-and-Music
 
       - title: Songify
         content: A generative music system for adding accompaniment to voice, particularly for spoken word, developed during the Generative Music AI Workshop (2025) in the Music Technology Group at Universitat Pompeu Fabreu in Barcelona.
-        image: /images/songify.png
+        image: images/songify.png
         featured:
           name: Repo
           link: https://github.com/hoggl-dsp/Songify/tree/main/songify
         badges:
           - "Python"
           - "Generative AI"
-          - "Music Information Retreival"
+          - "Music Information Retrieval"
         links:
           - icon: fab fa-github
             url: https://github.com/hoggl-dsp/Songify/tree/main/songify
@@ -406,17 +417,18 @@ params:
     #   messageRows: 5
 
   footer:
-    recentPosts:
-      path: "blogs"
-      count: 3
-      title: Recent Posts
-      enable: true
-      disableFeaturedImage: false
+    # recentPosts:
+    #   path: "blogs"
+    #   count: 3
+    #   title: Recent Posts
+    #   enable: true
+    #   disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/pereiraa10
       linkedin: https://www.linkedin.com/in/arianapereira13/
       # twitter: https://twitter.com
       instagram: https://www.instagram.com/ari__inez/
+      tiktok: https://www.tiktok.com/@ari__inez
       # facebook: https://facebook.com
 
   # List pages like blogs and posts
