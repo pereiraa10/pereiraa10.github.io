@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rich Content on Ariana Pereira</title><link>https://pereiraa10.github.io/tags/rich-content/</link><description>Recent content in Rich Content on Ariana Pereira</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 03 Apr 2021 19:53:33 +0530</lastBuildDate><atom:link href="https://pereiraa10.github.io/tags/rich-content/index.xml" rel="self" type="application/rss+xml"/><item><title>Rich Content</title><link>https://pereiraa10.github.io/blogs/rich-content/</link><pubDate>Sat, 03 Apr 2021 19:53:33 +0530</pubDate><guid>https://pereiraa10.github.io/blogs/rich-content/</guid><description>&lt;p&gt;Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#embedded"&gt;Embedded Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href="https://gohugo.io/about/privacy/#configuration"&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;h2 id="x-simple-shortcode"&gt;X Simple Shortcode&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;{{&amp;lt; tweet user=&amp;#34;GoHugoIO&amp;#34; id=&amp;#34;1315233626070503424&amp;#34; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Profile is a customizable single-page portfolio theme for Hugo featuring a contact form and blog. Made by &lt;a href="https://twitter.com/gurusabarishh?ref_src=twsrc%5Etfw"&gt;@gurusabarishh&lt;/a&gt;.&lt;a href="https://t.co/KwYcwfdy16"&gt;https://t.co/KwYcwfdy16&lt;/a&gt;&lt;/p&gt;&amp;mdash; GoHugo.io (@GoHugoIO) &lt;a href="https://twitter.com/GoHugoIO/status/1315233626070503424?ref_src=twsrc%5Etfw"&gt;October 11, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+
+&lt;br&gt;
+&lt;h2 id="vimeo-simple-shortcode"&gt;Vimeo Simple Shortcode&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;{{&amp;lt; vimeo 146022717 &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;
+
+ &lt;div
+ style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe
+ src="https://player.vimeo.com/video/146022717?dnt=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+&lt;br&gt;
+&lt;h2 id="youtube-simple-shortcode"&gt;Youtube Simple Shortcode&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;{{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/w7Ft2ymGmfc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+&lt;br&gt;
+&lt;h2 id="theme-custom-shortcodes"&gt;Theme Custom Shortcodes&lt;/h2&gt;
+&lt;p&gt;These shortcodes are not Hugo built-ins, but are provided by the theme.&lt;/p&gt;</description></item></channel></rss>
