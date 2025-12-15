@@ -302,7 +302,7 @@ params:
         #   url: "https://example.com"
 
   # projects
-  projects:
+  achievements:
     enable: true
     title: "GitHub Projects"
     items:
@@ -447,21 +447,21 @@ params:
             url: https://www.tiktok.com/@ari__inez 
 
  # Conferences & Workshops Attended
-  achievements:
-    enable: true
-    title: "Conferences & Workshops"
-    items:
-      - title: DCASE 2025 - Detection and Classification of Acoustic Scenes and Events - Organizing Committee
-        content: Attended lectures and poster sessions by pioneers in the field of acoustical detection and facilitated registration.
-        url: https://dcase.community/workshop2025/index
-        # image: /images/dcase2025_bcn_image.png
-      - title: 2025 ACM Europe School on Recommender Systems - Student Participant
-        content: Developed case study for a recipe recommendation system, reflecting on lecture topics covered both algorithmic and ethical.
-        # image: /images/recsys.jpeg
-      - title: UPF Generative AI Music Workshop - 2025
-        content: Constructed an AI application to generate piano accompaniments for speech audio. 
-        url: "https://github.com/hoggl-dsp/Songify"
-        # image: /images/Gen_AI_Wksp.jpeg
+  # achievements:
+  #   enable: true
+  #   title: "Conferences & Workshops"
+  #   items:
+  #     - title: DCASE 2025 - Detection and Classification of Acoustic Scenes and Events - Organizing Committee
+  #       content: Attended lectures and poster sessions by pioneers in the field of acoustical detection and facilitated registration.
+  #       url: https://dcase.community/workshop2025/index
+  #       # image: /images/dcase2025_bcn_image.png
+  #     - title: 2025 ACM Europe School on Recommender Systems - Student Participant
+  #       content: Developed case study for a recipe recommendation system, reflecting on lecture topics covered both algorithmic and ethical.
+  #       # image: /images/recsys.jpeg
+  #     - title: UPF Generative AI Music Workshop - 2025
+  #       content: Constructed an AI application to generate piano accompaniments for speech audio. 
+  #       url: "https://github.com/hoggl-dsp/Songify"
+  #       # image: /images/Gen_AI_Wksp.jpeg
 
 
   #Contact
