@@ -49,3 +49,15 @@ body.dark #moon {
 body:not(.dark) #sun {
     display: none;
 }
+
+/* Creative Projects cards light mode */
+#creativeprojects .card {
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
+}
+
+/* Creative Projects cards dark mode */
+.dark #creativeprojects .card {
+    background-color: var(--secondary-background-color-dark);
+    color: var(--text-color-dark);
+}

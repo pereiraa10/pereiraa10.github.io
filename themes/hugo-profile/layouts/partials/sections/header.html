@@ -124,6 +124,15 @@
                     </li>
                     {{ end }}
 
+                    {{ if and (.Site.Params.creativeprojects.enable | default false) (not (.Site.Params.navbar.menus.disableCreativeProjects | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#creativeprojects"
+                            aria-label="projects">
+                            {{ .Site.Params.creativeprojects.title | default "Creative Projects" }}
+                        </a>
+                    </li>
+                    {{ end }}
+
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#achievements"
