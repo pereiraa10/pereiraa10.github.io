@@ -137,7 +137,7 @@ params:
     title: "Ariana"
     subtitle: "ML Engineer, Musician, and Data Scientist"
     content: "MSc student in Sound & Music Computing at UPF’s Music Technology Group, focused on music perception, machine learning applications for sound and music information retrieval."
-    image: /images/Headshot0825-6827.jpg
+    # image: /images/Headshot0825-6827.jpg
     bottomImage:
       enable: true
     roundImage: true # Make hero image circular | default false
@@ -165,7 +165,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/Headshot0825-7738.jpg"
+    # image: "/images/Headshot0825-7738.jpg"
     content: |-
       I’m a machine learning engineer, musician, and creative problem-solver passionate about developing transformative technologies in the field of music. I’m currently pursuing a master’s in Sound and Music Computing at Universitat Pompeu Fabra, building on my machine learning foundation from Cornell University to explore state-of-the-art music information retrieval methods.  
       
@@ -304,11 +304,11 @@ params:
   # projects
   projects:
     enable: true
-    # title: "Custom Name"
+    title: "GitHub Projects"
     items:
       - title: ML Song Segmentation Classification
         content: An analysis of different Machine Learning algorithms used for song segmentation classification.
-        image: /images/ML_classifier_ex.png
+        # image: /images/ML_classifier_ex.png
         featured:
           name: Repo
           link: https://github.com/pereiraa10/ML-Song-Segmentation-Classification
@@ -326,7 +326,7 @@ params:
 
       - title: UPF ML for Sound and Music 
         content: Experiments with different ML algorithms to perform genre classification; written and run on publically available datasets (MagnaTagATune) for the Master's Program in Sound and Music Computing at Universitat Pompeu Fabra in Barcelona, Spain.
-        image: /images/projects/converter.jpg
+        # image: /images/projects/converter.jpg
         featured:
           name: Repo
           link: https://github.com/pereiraa10/UPF-ML-for-Sound-and-Music
@@ -340,7 +340,7 @@ params:
 
       - title: Songify
         content: A generative music system for adding accompaniment to voice, particularly for spoken word, developed during the Generative Music AI Workshop (2025) in the Music Technology Group at Universitat Pompeu Fabreu in Barcelona.
-        image: images/songify.png
+        # image: images/songify.png
         featured:
           name: Repo
           link: https://github.com/hoggl-dsp/Songify/tree/main/songify
@@ -354,7 +354,7 @@ params:
 
       - title: Cornell ML for Data Science 
         content: Over the course of 14-weeks, I completed 7 python-based projects to demonstrate command of machine learning concepts.
-        image: /images/cornell_cert.png
+        # image: /images/cornell_cert.png
         featured:
           name: Repo
           link: https://github.com/pereiraa10/Cornell-ML-for-Data-Science-Finished-Projects
@@ -368,7 +368,7 @@ params:
 
       - title: SigMA IDyOMpy
         content: Exploring the python implementation of IDyOM by Guilhem Marion to be used in a project about cortical encoding of musical surprisal.
-        image: /images/IDyOMpy.jpeg
+        # image: /images/IDyOMpy.jpeg
         featured:
           name: Repo
           link: https://github.com/pereiraa10/SigMA-IDyOMpy
@@ -380,6 +380,72 @@ params:
           - icon: fab fa-github
             url: https://github.com/pereiraa10/SigMA-IDyOMpy
 
+  # Creative Projects
+  projects:
+    enable: true
+    title: "Creative Projects"
+    items:
+      - title: Aevina the Ukulelian
+        content: Producer, co-composer and arranger on an experimental singer-songwriter brand, blending musical storytelling with existential themes.
+        # image: /images/ML_classifier_ex.png
+        featured:
+          name: Spotify
+          link: https://open.spotify.com/artist/0zShSa8Y2NA1ec4Z2lRALb?si=_-jpnBv9SKSBNgecNHXaWg
+        badges:
+          - "Vocalist"
+          - "Co-Composer"
+          - "Producer"
+        links:
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-instagram
+            url: https://www.instagram.com/aevina.ukulelian/reels/
+      - title: Paid Time Off
+        content: Background vocalist for a pop punk band, performing live across NYC and NJ as well as in-studio recordings. 
+        # image: /images/ML_classifier_ex.png
+        # featured:
+        #   name: Spotify
+        #   link: https://open.spotify.com/artist/0zShSa8Y2NA1ec4Z2lRALb?si=_-jpnBv9SKSBNgecNHXaWg
+        badges:
+          - "Vocalist"
+          - "Pop Punk Band"
+          - "NYC"
+        links:
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-instagram
+            url: https://www.instagram.com/paidtimeoff_official/ 
+      - title: Mark Bankin Dance Company
+        content: Producer for a post-modern dance company performance series, blending modern expressionist vocabulary and experimental storytelling  
+        # image: /images/ML_classifier_ex.png
+        featured:
+          name: Horse Girl
+          link: https://www.youtube.com/watch?v=6mZaRJdr0Mw 
+        badges:
+          - "Producer"
+          - "Modern Expressionist Dance"
+          - "NYC"
+        links:
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-instagram
+            url: https://www.instagram.com/reel/CplelnyuNqz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA== 
+      - title: Free Lance Background Vocalist / Musician / Producer
+        content: 5+ years’ experience recording, co-writing, and performing with label producers and songwriters (of Def Jam studios and Oliver Studios) and indie artists for streaming releases and live performances at top NYC venues (The Delancey, The Music Inn, GreenSpace Studios, etc.)
+        # image: /images/ML_classifier_ex.png
+        featured:
+          name: SoundBetter
+          link: https://soundbetter.com/profiles/674484-ariana-ines-pereira 
+        badges:
+          - "Vocalist
+          - "Producer"
+          - "Musician"
+        links:
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-tiktok
+            url: https://www.tiktok.com/@ari__inez 
+
  # Conferences & Workshops Attended
   achievements:
     enable: true
@@ -388,19 +454,15 @@ params:
       - title: DCASE 2025 - Detection and Classification of Acoustic Scenes and Events - Organizing Committee
         content: Attended lectures and poster sessions by pioneers in the field of acoustical detection and facilitated registration.
         url: https://dcase.community/workshop2025/index
-        image: /images/dcase2025_bcn_image.png
+        # image: /images/dcase2025_bcn_image.png
       - title: 2025 ACM Europe School on Recommender Systems - Student Participant
         content: Developed case study for a recipe recommendation system, reflecting on lecture topics covered both algorithmic and ethical.
-        image: /images/recsys.jpeg
+        # image: /images/recsys.jpeg
       - title: UPF Generative AI Music Workshop - 2025
         content: Constructed an AI application to generate piano accompaniments for speech audio. 
         url: "https://github.com/hoggl-dsp/Songify"
-        image: /images/Gen_AI_Wksp.jpeg
-      # - title: Microsoft Imagine Runner
-      #   content: We are developed a product which can help others.
-      # - title: Google Summer of Code
-      #   content: Contributed to a open source project.
-      #   url: https://example.com
+        # image: /images/Gen_AI_Wksp.jpeg
+
 
   #Contact
   contact:
