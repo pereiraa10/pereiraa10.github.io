@@ -467,11 +467,14 @@ params:
           - icon: fab fa-tiktok
             url: https://www.tiktok.com/@ari__inez 
 
- # Conferences & Workshops Attended
+ # Research Experience
   achievements:
     enable: true
-    title: "Conferences & Workshops"
+    title: "Research Experience"
     items:
+      - title: Signal Processing Mentorship Academy of IEEE - Mentee Researcher
+        content: Investingating the neural encoding of musical surprisal through stastical modeling to be presented at ICASSP 2027
+        url: https://signalprocessingsociety.org/professional-development/signal-processing-mentorship-academy-sigma-program 
       - title: DCASE 2025 - Detection and Classification of Acoustic Scenes and Events - Organizing Committee
         content: Attended lectures and poster sessions by pioneers in the field of acoustical detection and facilitated registration.
         url: https://dcase.community/workshop2025/index
