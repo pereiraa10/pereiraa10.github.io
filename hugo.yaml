@@ -200,6 +200,27 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - company: "Universitat Pompeu Fabra"
+        companyUrl: "https://www.upf.edu/web/smc/overview"
+        jobs:
+          - name: "Musitopia Intern"
+            date: "Jan 2026 - Present"
+            content: "At a startup focused on serving music therapists, I implemented generative AI models for music and guided meditation content, designed interactive virtual instruments using signal processing and music information retrieval, enhanced music recommendation algorithms with musical and user engagement features, and contributed to shaping the company’s forward business strategy."
+            info:
+            #   content: Working as a senior software developer
+            # featuredItems:
+              fontAwesomeIcons:
+                # - icon: fa-brands fa-react
+                #   url: https://react.dev/
+            #       tooltip: Example tooltip content
+            #     - icon: fab fa-x-twitter
+            #       url: https://example.com
+            #       # tooltip: Example tooltip content
+              customIcons:
+                - icon: /images/musitopia.png
+                  url: "https://musitopia.appskynote.com/"
+            #       tooltip: Example tooltip content
+
       - company: "Goldman Sachs"
         companyUrl: "https://www.goldmansachs.com/"
         jobs:
