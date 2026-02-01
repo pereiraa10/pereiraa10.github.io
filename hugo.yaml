@@ -62,7 +62,7 @@ params:
   title: "Ariana Pereira"
   description: MSc student in Sound & Music Computing at UPF’s Music Technology Group, focused on music perception, machine learning applications for sound and music information retrieval.
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "images/favicons/favicon-512x512.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -156,6 +156,10 @@ params:
           url: https://www.linkedin.com/in/arianapereira13/
         - icon: fab fa-tiktok
           url: https://www.tiktok.com/@ari__inez
+        - icon: fab fa-youtube
+          url: https://www.youtube.com/@ari__inez
+        - icon: fab fa-soundcloud
+          url: https://on.soundcloud.com/E3OL7sVkMcHaNR8xCN 
       # customIcons:
       #   - icon: /images/LinkedIn.png
       #     url: "https://www.linkedin.com/in/arianapereira13/"
