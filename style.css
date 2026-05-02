@@ -61,3 +61,30 @@ a:hover {
 .btn-primary:hover {
   opacity: 0.9;
 }
+
+/* ===== CONTACT BUTTON ===== */
+.dark #contact .btn {
+  color: #0B0F1A !important;
+}
+
+/* ===== SECTION TITLE COLORS ===== */
+#creativeprojects h3 {
+  color: var(--text-secondary-color) !important;
+}
+
+/* ===== UNIFY CARD BACKGROUNDS TO MATCH CREATIVE PROJECTS ===== */
+#projects .card,
+#education .card *,
+#achievements .card,
+#achievements .card-text,
+#experience .experience-container {
+  background-color: var(--secondary-background-color) !important;
+}
+
+.dark #projects .card,
+.dark #education .card *,
+.dark #achievements .card,
+.dark #achievements .card-text,
+.dark #experience .experience-container {
+  background-color: var(--secondary-background-color-dark) !important;
+}
