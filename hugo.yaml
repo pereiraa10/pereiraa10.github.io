@@ -115,7 +115,7 @@ params:
     content: |
       I build generative music models for wellness applications informed by computational neuroscience research
     
-      **MSc @ UPF Music Technology Group | Musitopia Co-Founder | Musician**"
+      **MSc @ UPF Music Technology Group | Musitopia Co-Founder | Musician**
     image: /images/Headshot0825-6827.jpg
     bottomImage:
       enable: true
@@ -526,5 +526,5 @@ params:
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
 
-  #customScripts: -| # You can add custom scripts which will be added before </body> tag
-  #  <script type="text/javascript"><!-- any script here --></script>
+  customScripts: |
+    <script src="/js/harmonograph.js" defer></script>
