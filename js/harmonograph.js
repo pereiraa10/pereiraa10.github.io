@@ -42,15 +42,14 @@ const HP = {
   const canvas = document.createElement('canvas');
   canvas.id = 'harmonograph-bg';
   Object.assign(canvas.style, {
-    position:      'fixed',
-    top:           '0',
-    left:          '0',
-    width:         '100vw',
-    height:        '100vh',
-    zIndex:        '0',
-    pointerEvents: 'none',
-    willChange:       'transform',  // promotes to own GPU compositor layer
-    backgroundColor:  'transparent', // override .light > * which forces bg on all body children
+    position:        'fixed',
+    top:             '0',
+    left:            '0',
+    width:           '100vw',
+    height:          '100vh',
+    zIndex:          '0',
+    pointerEvents:   'none',
+    backgroundColor: 'transparent', // override .light > * which forces bg on all body children
   });
   document.body.insertBefore(canvas, document.body.firstChild);
 
