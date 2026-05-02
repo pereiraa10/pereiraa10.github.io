@@ -1,6 +1,6 @@
 /* ===== GLOBAL BACKGROUND ===== */
-html,
-body {
+/* Gradient lives on html only — body must be transparent so the canvas shows through */
+html {
   background: radial-gradient(circle at 20% 30%, rgba(124, 92, 255, 0.12), transparent 40%),
               radial-gradient(circle at 80% 70%, rgba(45, 226, 230, 0.10), transparent 40%),
               #0B0F1A !important;
@@ -8,12 +8,15 @@ body {
   animation: gradientShift 20s ease infinite;
 }
 
-html:not(.dark),
-body:not(.dark) {
-  background: radial-gradient(circle at 10% 20%, rgba(108, 77, 255, 0.10), transparent 40%),
-              radial-gradient(circle at 90% 80%, rgba(0, 191, 207, 0.08), transparent 40%),
+html:not(.dark) {
+  background: radial-gradient(circle at 20% 30%, rgba(108, 77, 255, 0.10), transparent 40%),
+              radial-gradient(circle at 80% 70%, #00bfcf14, transparent 40%),
               #F7F9FC !important;
   background-attachment: fixed !important;
+}
+
+body {
+  background: transparent !important;
 }
 
 @keyframes gradientShift {
@@ -62,6 +65,18 @@ a:hover {
   opacity: 0.9;
 }
 
+/* ===== ENSURE PAGE CONTENT SITS ABOVE CANVAS (z-index 0) ===== */
+/* .light > * forces background-color on all direct body children — override for canvas and content */
+#content,
+#harmonograph-bg {
+  background-color: transparent !important;
+}
+
+#content {
+  position: relative;
+  z-index: 1;
+}
+
 /* ===== CONTACT BUTTON ===== */
 .dark #contact .btn {
   color: #0B0F1A !important;
@@ -70,6 +85,19 @@ a:hover {
 /* ===== SECTION TITLE COLORS ===== */
 #creativeprojects h3 {
   color: var(--text-secondary-color) !important;
+}
+
+/* ===== ABOUT ME — FROSTED GLASS BOX ===== */
+#about .content {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+}
+
+html:not(.dark) #about .content {
+  background: rgba(255, 255, 255, 0.78);
 }
 
 /* ===== UNIFY CARD BACKGROUNDS TO MATCH CREATIVE PROJECTS ===== */
