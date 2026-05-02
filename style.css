@@ -1,0 +1,63 @@
+/* ===== GLOBAL BACKGROUND ===== */
+html,
+body {
+  background: radial-gradient(circle at 20% 30%, rgba(124, 92, 255, 0.12), transparent 40%),
+              radial-gradient(circle at 80% 70%, rgba(45, 226, 230, 0.10), transparent 40%),
+              #0B0F1A !important;
+  background-attachment: fixed !important;
+  animation: gradientShift 20s ease infinite;
+}
+
+html:not(.dark),
+body:not(.dark) {
+  background: radial-gradient(circle at 10% 20%, rgba(108, 77, 255, 0.10), transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(0, 191, 207, 0.08), transparent 40%),
+              #F7F9FC !important;
+  background-attachment: fixed !important;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 20% 30%, 80% 70%; }
+  50%  { background-position: 25% 35%, 75% 65%; }
+  100% { background-position: 20% 30%, 80% 70%; }
+}
+
+/* ===== SECTIONS FLOAT ABOVE GRADIENT ===== */
+.section {
+  background: transparent !important;
+}
+
+/* ===== CARDS — DARK MODE ===== */
+.card,
+.shadow {
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+}
+
+/* ===== CARDS — LIGHT MODE ===== */
+body:not(.dark) .card,
+body:not(.dark) .shadow {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* ===== ACCENT COLORS ===== */
+a {
+  color: #7C5CFF;
+}
+
+a:hover {
+  color: #2DE2E6;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #7C5CFF, #2DE2E6) !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
