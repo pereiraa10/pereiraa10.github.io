@@ -77,6 +77,11 @@ a:hover {
   z-index: 1;
 }
 
+#hero {
+  position: relative;
+  z-index: 2;
+}
+
 /* ===== CONTACT BUTTON ===== */
 .dark #contact .btn {
   color: #0B0F1A !important;
