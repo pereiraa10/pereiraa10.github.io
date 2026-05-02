@@ -28,41 +28,20 @@ markup:
     renderer:
       unsafe: true
 
-# Menus:
-#   main:
-    # - identifier: blog
-    #   name: Blog
-    #   title: Blog posts
-    #   url: /blogs
-    #   weight: 1
-    # - identifier: gallery
-    #   name: Gallery
-    #   title: Blog posts
-    #   url: /gallery
-    #   weight: 2
-    # #Dropdown menu
-    # - identifier: workshops
-    #   title: Workshops & Conferences Attended
-    #   name: Workshops & Conferences
-    #   weight: 3
-    # # - identifier: dropdown1
-    #   title: example dropdown 1
-    #   name: example 1
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 1
-    # - identifier: dropdown2
-    #   title: example dropdown 2
-    #   name: example 2
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 2
+menus:
+  main:
+    - identifier: cv
+      name: CV
+      title: Curriculum Vitae
+      url: /cv
+      weight: 1
 
 params:
   title: "Ariana Pereira"
-  description: MSc student in Sound & Music Computing at UPF’s Music Technology Group, focused on music perception, machine learning applications for sound and music information retrieval.
+  description: Generative Music | Computational Neuroscience | Wellbeing 
   # staticPath: ""  # The path to serve the static files from
   favicon: "images/favicons/favicon-512x512.png"
+  customCSS: true
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -82,7 +61,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    defaultTheme: "light" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -90,13 +69,13 @@ params:
     lineHeight: 1.5 # default: 1.5
     textAlign: left # default: left
 
-  # color preference
-  # When using hex codes for colors, quotations must be used along with the # sign
+  # # color preference
+  # # When using hex codes for colors, quotations must be used along with the # sign
   # color:
   #   textColor: "#343a40"
   #   secondaryTextColor: "#6c757d"
   #   textLinkColor: "#007bff"
-  #   backgroundColor: "#eaedf0"
+  #   backgroundColor: "#F7F9FC"
   #   secondaryBackgroundColor: "#64ffda1a"
   #   primaryColor: "#007bff"
   #   secondaryColor: "#f8f9fa"
@@ -109,6 +88,24 @@ params:
   #     secondaryBackgroundColor: "#212529"
   #     primaryColor: "#ffffff"
   #     secondaryColor: "#212529"
+
+  color:
+  textColor: "#1A1F2B"
+  secondaryTextColor: "#5B647A"
+  textLinkColor: "#6C4DFF"
+  backgroundColor: "#F7F9FC"
+  secondaryBackgroundColor: "#EEF2F7"
+  primaryColor: "#6C4DFF"
+  secondaryColor: "#00BFCF"
+
+  darkmode:
+    textColor: "#E6EAF2"
+    secondaryTextColor: "#A0A8C0"
+    textLinkColor: "#7C5CFF"
+    backgroundColor: "#0B0F1A"
+    secondaryBackgroundColor: "#121829"
+    primaryColor: "#7C5CFF"
+    secondaryColor: "#2DE2E6"
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -133,20 +130,23 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
-    title: "Ariana"
-    subtitle: "ML Engineer, Musician, and Data Scientist"
-    content: "MSc student in Sound & Music Computing at UPF’s Music Technology Group, focused on music perception, machine learning applications for sound and music information retrieval."
+    intro: "Hi, I'm"
+    title: "Ariana Ines Pereira"
+    subtitle: "Music Technologist, AI Researcher & Entrepreneur"
+    content: "
+      I build AI generative music models for wellness applications informed by computational neuroscience research
+    
+      MSc @ UPF Music Technology Group | Musitopia Co-Founder | Musician"
     image: /images/Headshot0825-6827.jpg
     bottomImage:
       enable: true
     roundImage: true # Make hero image circular | default false
-    # button:
-    #   enable: true
-    #   name: "Resume"
-    #   url: "#"
-    #   download: true
-    #   newPage: false
+    button:
+      enable: true
+      name: "Resume"
+      url: "/cv"
+      download: false
+      newPage: false
 
     socialLinks:
       fontAwesomeIcons:
@@ -160,9 +160,9 @@ params:
           url: https://www.youtube.com/@ari__inez
         - icon: fab fa-soundcloud
           url: https://on.soundcloud.com/E3OL7sVkMcHaNR8xCN 
-      # customIcons:
-      #   - icon: /images/LinkedIn.png
-      #     url: "https://www.linkedin.com/in/arianapereira13/"
+      customIcons:
+        - icon: /images/musitopia.png
+          url: "https://musitopia.appskynote.com/about"
 
 
   # About
@@ -171,33 +171,24 @@ params:
     title: "About Me"
     image: "/images/Headshot0825-7738.jpg"
     content: |-
-      I’m a machine learning engineer, musician, and creative problem-solver passionate about developing transformative technologies in the field of music. I’m currently pursuing a master’s in Sound and Music Computing at Universitat Pompeu Fabra, building on my machine learning foundation from Cornell University to explore state-of-the-art music information retrieval methods.  
-      
-      My research focuses on how the brain encodes music and how musical enculturation shapes perception and preferences. I also work on exploring machine learning methods for intuitive musical data management. I aim to build technologies that contribute to a more intuitive, ethical and equitable landscape for artist discoverability.
-      
-      With +4 yrs of professional experience in corporate financial modeling and advanced analytics at Goldman Sachs, I built strong technical expertise in Python, SQL, and data visualization, as well as business acumen to navigate complex stakeholder, and legal environments.  
-      
-      I’m also a performing musician with experience in studio production, live performance, composition, and arrangement across genres. This dual perspective fuels my drive to contribute meaningfully to the field of music information retrieval research. 
+      Working at the intersection of computational neuroscience and music technology, I study how music impacts our emotions and interacts with our natural internal rhythms.  
+
+      I use research-backed insights to design machine learning systems for interactive generative music particularly in contexts of wellbeing and music therapy.  
+
+      Before this, I spent 4+ years at Goldman Sachs working in business strategy and financial modeling, developing an intuition for business development and entrepreneurship.  
+
+      As an active musician and producer as well, my creative pursuits inform my approach to building tools that are intuitive and creatively meaningful.  
+
+      **I’m interested in collaborations in music AI, computational neuroscience, and creative technology.**
     skills:
       enable: true
-      title: "Here are a few technologies I work with:"
+      title: "Technologies & Tools"
       items:
-        - "Programming & Data Analysis: 
-            Python, 
-            Excel, 
-            SQL, 
-            Tableau, 
-            Qliksense, 
-            Alteryx, 
-            Matplotlib"
-        - "Machine Learning: 
-            Pytorch, scikit-learn, TensorFlow, Librosa, Essentia"
-        - "Data Analysis: 
-            NumPy, Pandas, SciPy"
-        - "Music & Audio Tools: 
-            LogicPro, GarageBand, MIDI Plug-ins, Melodyne"
-        - "Instruments: 
-            Piano, Voice, Ukulele, and Advanced Music Theory"
+        - "Machine Learning: Pytorch, TensorFlow, scikit-learn"
+        - "Audio & MIR: Librosa, Essentia, DSP"
+        - "Data Engineering: Python, SQL, Pandas, NumPy"
+        - "Creative Tools: LogicPro, GarageBand, MIDI Plug-ins, Melodyne"
+        - "Music: Piano, Voice, Ukulele, Composition & Theory"
 
   # Experience
   experience:
@@ -207,9 +198,9 @@ params:
       - company: "Universitat Pompeu Fabra"
         companyUrl: "https://www.upf.edu/web/smc/overview"
         jobs:
-          - name: "Musitopia Intern"
+          - name: "Musitopia Co-Founder"
             date: "Jan 2026 - Present"
-            content: "At a startup focused on serving music therapists, I implemented generative AI models for music and guided meditation content, designed interactive virtual instruments using signal processing and music information retrieval, enhanced music recommendation algorithms with musical and user engagement features, and contributed to shaping the company’s forward business strategy."
+            content: "A startup focused on serving music therapists, I build interactive generative music systems for a music therapy platform, to personalize music for emotional wellbeing. I also contribute to both product development and early-stage business strategy."
             info:
             #   content: Working as a senior software developer
             # featuredItems:
@@ -228,10 +219,10 @@ params:
       - company: "Goldman Sachs"
         companyUrl: "https://www.goldmansachs.com/"
         jobs:
-          - name: "Wealth Management Finance and Strategy Associate"
+          - name: "Wealth Management Finance & Strategy Associate"
             date: "Jun 2023 - Jun 2025"
-            content: "Designed predictive models to optimize resource allocation and operational efficiency leveraging advanced data analysis. 
-                      Automated data pipelines for metadata management, improving data quality and the delivery of management reports."
+            content: "Designed predictive financial models to inform management decision-making at enterprise-scale.  
+                      Advised on acquisitions and strategic initiatives by building business intelligence tools."
             # info:
             #   content: Working as a senior software developer
             # # featuredItems:
@@ -246,32 +237,26 @@ params:
             #     - icon: /fav.png
             #       url: "https://example.com"
             #       tooltip: Example tooltip content
-          - name: "Corporate Treasury Entity Structure and Strategy Analyst"
+          - name: "Corporate Treasury Analyst"
             date: "Jul 2021 - Jun 2023"
-            content: "Led research and developed frameworks to evaluate and scale complex global systems within regulatory compliance.
-                      Synthesized technical findings for senior stakeholders on strategic M&A and business efficiency initiatives.
-                      Negotiated funding utilization limits between the revenue-generating and liquidity risk functional leadership teams."
-          - name: "Corporate Treasury Asset Liability Management Summer Analyst"
-            date: "5 Weeks (Jul 2020 - Aug 2020"
-            content: "Analyzed funding data through macro attribution to monitor maturity transformation’s impact on the firmwide profit and loss.
-                      Enhanced monthly reporting on liquidity metrics to deliver more informative and intuitive management reporting."
+            content: "Led macro-economic research initiatives to inform liquidity management decisions and navigate an evolving regulatory landscape."
 
-      - company: "MSU"
-        companyUrl: "https://www.montclair.edu/"
-        jobs:
-          - name: "Resident Assistant"
-            date: "(3 Semesters) Fall 2019 - Fall 2020"
-            content: "Supported a community of 45 upperclassmen and graduate residents by organizing transition-focused programming and ensuring a safe, well-managed living environment through extensive on-duty and front-desk service."
-          - name: "Leadership Ambassador"
-            date: "(6 Semesters) Fall 2018 - Spring 2021"
-            content: "Facilitated leadership development through workshops and programs, managed and promoted a university-wide event calendar and social media content, and co-produced a leadership podcast reaching 571 listeners across 12 countries."
+      # - company: "MSU"
+      #   companyUrl: "https://www.montclair.edu/"
+      #   jobs:
+      #     - name: "Resident Assistant"
+      #       date: "(3 Semesters) Fall 2019 - Fall 2020"
+      #       content: "Supported a community of 45 upperclassmen and graduate residents by organizing transition-focused programming and ensuring a safe, well-managed living environment through extensive on-duty and front-desk service."
+      #     - name: "Leadership Ambassador"
+      #       date: "(6 Semesters) Fall 2018 - Spring 2021"
+      #       content: "Facilitated leadership development through workshops and programs, managed and promoted a university-wide event calendar and social media content, and co-produced a leadership podcast reaching 571 listeners across 12 countries."
 
-      - company: "Southern First Bank"
-        companyUrl: "https://www.southernfirst.com/"
-        jobs:
-          - name: "Bank Teller Intern"
-            date: "(3 Months) Jun 2019 - Aug 2019"
-            content: "Delivered outstanding customer service while managing diverse transaction banking needs, including high-volume business cash deposits, and ensured compliance with BSA regulations to safeguard clients’ financial information."
+      # - company: "Southern First Bank"
+      #   companyUrl: "https://www.southernfirst.com/"
+      #   jobs:
+      #     - name: "Bank Teller Intern"
+      #       date: "(3 Months) Jun 2019 - Aug 2019"
+      #       content: "Delivered outstanding customer service while managing diverse transaction banking needs, including high-volume business cash deposits, and ensured compliance with BSA regulations to safeguard clients’ financial information."
 
   # Education
   education:
@@ -293,7 +278,7 @@ params:
         school:
           name: "Cornell University"
           url: "https://ecornell.cornell.edu/certificates/ai/machine-learning/"
-        date: "Fall 2024"
+        date: "2024"
         # GPA: "3.9 out of 5.0"
         # content: |-
         #   I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
@@ -305,26 +290,26 @@ params:
         #     - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
         featuredLink:
           enable: true
-          name: "Featured Projects"
+          name: "Projects"
           url: "https://github.com/pereiraa10/Cornell-ML-for-Data-Science-Finished-Projects"
-      - title: "BSc in Business Administration, Concentration in Finance"
+      - title: "BSc in Business Administration (Finance)"
         school:
           name: "Montclair State University"
           url: "https://www.montclair.edu/"
-        date: "Fall 2017 - Spring 2021"
-        GPA: "3.9 out of 4.0 - Dean's List"
+        date: "2017 - 2021"
+        GPA: "3.9 / 4.0 - Dean's List"
         # featuredLink:
         #   enable: true
         #   url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Randolph High School"
-          url: "https://www.rtnj.org/our-schools/randolph-high-school"
-        date: "Fall 2013-2017"
-        GPA: "3.8 out of 4.0"
-        # featuredLink:
-        #   enable: true
-        #   url: "https://example.com"
+      # - title: "High School"
+      #   school:
+      #     name: "Randolph High School"
+      #     url: "https://www.rtnj.org/our-schools/randolph-high-school"
+      #   date: "Fall 2013-2017"
+      #   GPA: "3.8 out of 4.0"
+      #   # featuredLink:
+      #   #   enable: true
+      #   #   url: "https://example.com"
 
   # Acheivements
   projects:
@@ -332,15 +317,19 @@ params:
     title: "GitHub Projects"
     items:
       - title: ML Song Segmentation Classification
-        content: An analysis of different Machine Learning algorithms used for song segmentation classification.
+        content: |
+          Classifies song structure (verse/chorus) using machine learning on audio features.  
+
+          Explores whether models can learn human-perceived musical form.
         image: "/images/ML_classifier_ex.png"
         featured:
           name: Repo
           link: https://github.com/pereiraa10/ML-Song-Segmentation-Classification
         badges:
           - "Python"
+          - "MIR"
           - "Machine Learning"
-          - "Music Information Retrieval"
+          
         links:
           # - icon: fa fa-envelope
           #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
@@ -349,66 +338,70 @@ params:
           # - icon: fab fa-twitter
           #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: UPF ML for Sound and Music 
-        content: Experiments with different ML algorithms to perform genre classification; written and run on publically available datasets (MagnaTagATune) for the Master's Program in Sound and Music Computing at Universitat Pompeu Fabra in Barcelona, Spain.
-        image: "/images/projects/converter.jpg"
-        featured:
-          name: Repo
-          link: https://github.com/pereiraa10/UPF-ML-for-Sound-and-Music
-        badges:
-          - "Python"
-          - "Machine Learning"
-          - "Music Information Retrieval"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/pereiraa10/UPF-ML-for-Sound-and-Music
-
       - title: Songify
-        content: A generative music system for adding accompaniment to voice, particularly for spoken word, developed during the Generative Music AI Workshop (2025) in the Music Technology Group at Universitat Pompeu Fabreu in Barcelona.
+        content: |
+          Generative system that creates musical accompaniment for speech.  
+
+          Designed to explore human-AI interaction in expressive music creation.
         image: "/images/songify.png"
         featured:
           name: Repo
           link: https://github.com/hoggl-dsp/Songify/tree/main/songify
         badges:
-          - "Python"
           - "Generative AI"
-          - "Music Information Retrieval"
+          - "Musical Creativity"
         links:
           - icon: fab fa-github
             url: https://github.com/hoggl-dsp/Songify/tree/main/songify
 
-      - title: Cornell ML for Data Science 
-        content: Over the course of 14-weeks, I completed 7 python-based projects to demonstrate command of machine learning concepts.
-        image: "/images/cornell_cert.png"
-        featured:
-          name: Repo
-          link: https://github.com/pereiraa10/Cornell-ML-for-Data-Science-Finished-Projects
-        badges:
-          - "Python"
-          - "Machine Learning"
-          - "Data Science"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/pereiraa10/Cornell-ML-for-Data-Science-Finished-Projects
+      - title: Musical Surprisal Over Time
+        content:  |
+          Investigates the evolution of musical surprisal in pop music overtime.  
 
-      - title: SigMA IDyOMpy
-        content: Exploring the python implementation of IDyOM by Guilhem Marion to be used in a project about cortical encoding of musical surprisal.
-        image: "/images/IDyOMpy.jpeg"
+          Applied to understanding neural encoding of music perception.
+        image: "/images/IDyOM_time_machine.jpg"
         featured:
           name: Repo
-          link: https://github.com/pereiraa10/SigMA-IDyOMpy
+          link: https://github.com/martiinsssssss/IDyOM_TimeMachine
         badges:
-          - "Python"
           - "Machine Learning"
           - "Musical Perception"
         links:
           - icon: fab fa-github
-            url: https://github.com/pereiraa10/SigMA-IDyOMpy
+            url: https://github.com/martiinsssssss/IDyOM_TimeMachine
+
+      # - title: UPF ML for Sound and Music 
+      #   content: Experiments with different ML algorithms to perform genre classification; written and run on publically available datasets (MagnaTagATune) for the Master's Program in Sound and Music Computing at Universitat Pompeu Fabra in Barcelona, Spain.
+      #   image: "/images/projects/converter.jpg"
+      #   featured:
+      #     name: Repo
+      #     link: https://github.com/pereiraa10/UPF-ML-for-Sound-and-Music
+      #   badges:
+      #     - "Python"
+      #     - "Machine Learning"
+      #     - "Music Information Retrieval"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/pereiraa10/UPF-ML-for-Sound-and-Music
+
+      # - title: Cornell ML for Data Science 
+      #   content: Over the course of 14-weeks, I completed 7 python-based projects to demonstrate command of machine learning concepts.
+      #   image: "/images/cornell_cert.png"
+      #   featured:
+      #     name: Repo
+      #     link: https://github.com/pereiraa10/Cornell-ML-for-Data-Science-Finished-Projects
+      #   badges:
+      #     - "Python"
+      #     - "Machine Learning"
+      #     - "Data Science"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/pereiraa10/Cornell-ML-for-Data-Science-Finished-Projects
 
   # Creative Projects
   creativeprojects:
     enable: true
-    title: "Creative Projects"
+    title: "Music & Creative Work"
     items:
       - title: Aevina the Ukulelian
         content: Producer, co-composer and arranger on an experimental singer-songwriter brand, blending musical storytelling with existential themes.
@@ -455,8 +448,11 @@ params:
           #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-instagram
             url: https://www.instagram.com/reel/CplelnyuNqz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA== 
-      - title: Free Lance Background Vocalist / Musician / Producer
-        content: 5+ years’ experience recording, co-writing, and performing with label producers and songwriters (of Def Jam studios and Oliver Studios) and indie artists for streaming releases and live performances at top NYC venues (The Delancey, The Music Inn, GreenSpace Studios, etc.)
+      - title: Free Lance Musician & Producer
+        content: |
+          5+ years recording, performing and producing across studio and live settings in NYC metropolitan area. 
+          
+          Experience with both independent artists and label-affiliated producers.
         image: /images/soundbetter.jpg
         featured:
           name: SoundBetter
@@ -474,22 +470,24 @@ params:
  # Research Experience
   achievements:
     enable: true
-    title: "Research Experience"
+    title: "Research & Academic Work"
     items:
-      - title: Signal Processing Mentorship Academy of IEEE - Mentee Researcher
-        content: Investingating the neural encoding of musical surprisal through stastical modeling to be presented at ICASSP 2027
+      - title: IEEE Signal Processing Mentorship Program (SigMA)
+        content: Investigating neural encoding of musical surprisal using statistical modeling (ICASSP 2027 in progress)
         url: https://signalprocessingsociety.org/professional-development/signal-processing-mentorship-academy-sigma-program 
-      - title: DCASE 2025 - Detection and Classification of Acoustic Scenes and Events - Organizing Committee
-        content: Attended lectures and poster sessions by pioneers in the field of acoustical detection and facilitated registration.
-        url: https://dcase.community/workshop2025/index
-        # image: /images/dcase2025_bcn_image.png
-      - title: 2025 ACM Europe School on Recommender Systems - Student Participant
-        content: Developed case study for a recipe recommendation system, reflecting on lecture topics covered both algorithmic and ethical.
-        # image: /images/recsys.jpeg
-      - title: UPF Generative AI Music Workshop - 2025
+        image: /images/SigMA.jpg
+      - title: DCASE 2025 
+        content: Student Volunteer for conference on acoustic scene and event detection
+        url: https://dcase.community/workshop2025/index 
+        image: /images/dcase2025.png
+      - title: ACM Europe School on Recommender Systems - Student Participant
+        content: Explored algorithmic and ethical design of recommendation systems
+        url: https://www.linkedin.com/posts/arianapereira13_recsys-mir-ai-ugcPost-7374831909593309184-i7ar?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACW73t4BpG5rqpwR1YpBBg2lZDuLtJoR9cc 
+        image: /images/rec_sys.jpeg
+      - title: UPF Generative AI Music Workshop 
         content: Constructed an AI application to generate piano accompaniments for speech audio. 
         url: "https://github.com/hoggl-dsp/Songify"
-        # image: /images/Gen_AI_Wksp.jpeg
+        image: /images/gen_ai_workshop.jpeg
 
 
   #Contact
