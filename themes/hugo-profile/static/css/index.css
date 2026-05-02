@@ -88,7 +88,7 @@ header .navbar.animate {
 
 #hero .subtitle {
     font-size: clamp(14px,5vw,16px);
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 #hero h1 {
@@ -98,13 +98,13 @@ header .navbar.animate {
 
 #hero h2 {
     font-size: clamp(40px, 8vw, 60px);
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 #hero p {
     margin: 20px 0px 0px;
     max-width: 640px;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 #hero .image img {

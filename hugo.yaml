@@ -37,7 +37,7 @@ menus:
       weight: 1
 
 params:
-  title: "Ariana Pereira"
+  title: "Ariana Ines Pereira"
   description: Generative Music | Computational Neuroscience | Wellbeing 
   # staticPath: ""  # The path to serve the static files from
   favicon: "images/favicons/favicon-512x512.png"
@@ -61,7 +61,6 @@ params:
 
   theme:
     # disableThemeToggle: true
-    defaultTheme: "light" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -69,43 +68,23 @@ params:
     lineHeight: 1.5 # default: 1.5
     textAlign: left # default: left
 
-  # # color preference
-  # # When using hex codes for colors, quotations must be used along with the # sign
-  # color:
-  #   textColor: "#343a40"
-  #   secondaryTextColor: "#6c757d"
-  #   textLinkColor: "#007bff"
-  #   backgroundColor: "#F7F9FC"
-  #   secondaryBackgroundColor: "#64ffda1a"
-  #   primaryColor: "#007bff"
-  #   secondaryColor: "#f8f9fa"
-
-  #   darkmode:
-  #     textColor: "#e4e6eb"
-  #     secondaryTextColor: "#b0b3b8"
-  #     textLinkColor: "#ffffff"
-  #     backgroundColor: "#18191a"
-  #     secondaryBackgroundColor: "#212529"
-  #     primaryColor: "#ffffff"
-  #     secondaryColor: "#212529"
-
   color:
-  textColor: "#1A1F2B"
-  secondaryTextColor: "#5B647A"
-  textLinkColor: "#6C4DFF"
-  backgroundColor: "#F7F9FC"
-  secondaryBackgroundColor: "#EEF2F7"
-  primaryColor: "#6C4DFF"
-  secondaryColor: "#00BFCF"
+    textColor: "#1A1F2B" # dark blue
+    secondaryTextColor: "#6C4DFF" #grey blue
+    textLinkColor: "#6C4DFF" # bright purple 
+    backgroundColor: "#F7F9FC" # white
+    secondaryBackgroundColor: "#EEF2F7" # off white
+    primaryColor: "#6C4DFF" # bright purple 
+    secondaryColor: "#dbedff" # light blue
 
-  darkmode:
-    textColor: "#E6EAF2"
-    secondaryTextColor: "#A0A8C0"
-    textLinkColor: "#7C5CFF"
-    backgroundColor: "#0B0F1A"
-    secondaryBackgroundColor: "#121829"
-    primaryColor: "#7C5CFF"
-    secondaryColor: "#2DE2E6"
+    darkmode:
+      textColor: "#E6EAF2"
+      secondaryTextColor: "#A0A8C0"
+      textLinkColor: "#7C5CFF"
+      backgroundColor: "#0B0F1A"
+      secondaryBackgroundColor: "#121829"
+      primaryColor: "#7C5CFF"
+      secondaryColor: "#dbedff"
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -133,10 +112,10 @@ params:
     intro: "Hi, I'm"
     title: "Ariana Ines Pereira"
     subtitle: "Music Technologist, AI Researcher & Entrepreneur"
-    content: "
-      I build AI generative music models for wellness applications informed by computational neuroscience research
+    content: |
+      I build generative music models for wellness applications informed by computational neuroscience research
     
-      MSc @ UPF Music Technology Group | Musitopia Co-Founder | Musician"
+      **MSc @ UPF Music Technology Group | Musitopia Co-Founder | Musician**"
     image: /images/Headshot0825-6827.jpg
     bottomImage:
       enable: true
