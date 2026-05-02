@@ -60,6 +60,7 @@ params:
   animate: true
 
   theme:
+    defaultTheme: "dark"
     # disableThemeToggle: true
 
   font:
