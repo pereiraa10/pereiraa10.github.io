@@ -4,32 +4,33 @@
 // =============================================================
 const HP = {
   // --- Shape (x-axis) ---
-  f1: 2,            // x pendulum 1 frequency  (try near-integers for drift)
-  f2: 3.01,         // x pendulum 2 frequency
+  f1: 2.003,            // x pendulum 1 frequency  (try near-integers for drift)
+  f2: 3.017,         // x pendulum 2 frequency
   p1: 0,            // x pendulum 1 phase offset (radians)
   p2: Math.PI / 2,  // x pendulum 2 phase offset (1.57 ≈ π/2)
 
   // --- Shape (y-axis) ---
-  f3: 2.01,         // y pendulum 1 frequency
-  f4: 3,            // y pendulum 2 frequency
-  p3: Math.PI / 4,  // y pendulum 1 phase offset
+  f3: 2.013,         // y pendulum 1 frequency
+  f4: 3.005,            // y pendulum 2 frequency
+  p3: Math.PI / 3,  // y pendulum 1 phase offset
   p4: 0,            // y pendulum 2 phase offset
 
   // --- Decay ---
-  damping: 0.0003,  // how fast the curve spirals inward (0 = no decay, 0.001 = fast)
+  damping: 0.0000008,  // how fast the curve spirals inward (0 = no decay, 0.001 = fast)
 
   // --- Resolution ---
-  steps: 80000,     // total points precomputed — more = finer curve, more memory
-  dt:    0.02,      // time increment per step — smaller = smoother, slower to build
+  steps: 120000,     // total points precomputed — more = finer curve, more memory
+  dt:    0.0018,      // time increment per step — smaller = smoother, slower to build
 
   // --- Size ---
-  scale: 0.58,      // fraction of viewport min-dimension used for the drawing
+  scale: 0.42,      // fraction of viewport min-dimension used for the drawing
 
   // --- Color ---
-  opacity:    0.2,        // stroke opacity (0–1)
-  lineWidth:  1.2,        // stroke width in pixels
-  colorTwo:   '#00bfcf14',  // second gradient color (teal accent); set equal to primary for no gradient
-  colorBands: 24,         // number of color segments along the curve (1 = solid single color)
+  opacity:    0.4,        // stroke opacity (0–1)
+  lineWidth:  1.7,        // stroke width in pixels
+  colorTwo:   '#F4C95D',  // second gradient color (teal accent); set equal to primary for no gradient
+  colorBands: 10000,         // number of color segments along the curve (1 = solid single color)
+  colorCycles: 36,
 
   // --- Scroll feel ---
   easing: true,     // apply ease-in curve to scroll progress (true = slower start)
@@ -43,7 +44,6 @@ const HP = {
   canvas.id = 'harmonograph-bg';
   Object.assign(canvas.style, {
     position:        'fixed',
-    top:             '0',
     left:            '0',
     width:           '100vw',
     height:          '100vh',
@@ -95,13 +95,44 @@ const HP = {
   }
 
   // Interpolated rgba at curve-progress t (0–1): primary color → colorTwo
+  // function colorAt(t) {
+  //   const a = hexToRgb(accentColor());
+  //   const b = hexToRgb(HP.colorTwo);
+  //   const r  = Math.round(a[0] + (b[0] - a[0]) * t);
+  //   const g  = Math.round(a[1] + (b[1] - a[1]) * t);
+  //   const bl = Math.round(a[2] + (b[2] - a[2]) * t);
+  //   return `rgba(${r},${g},${bl},${HP.opacity})`;
+  // }
+
   function colorAt(t) {
-    const a = hexToRgb(accentColor());
-    const b = hexToRgb(HP.colorTwo);
-    const r  = Math.round(a[0] + (b[0] - a[0]) * t);
-    const g  = Math.round(a[1] + (b[1] - a[1]) * t);
-    const bl = Math.round(a[2] + (b[2] - a[2]) * t);
-    return `rgba(${r},${g},${bl},${HP.opacity})`;
+  const cycle = (t * HP.colorCycles) % 1;
+
+  let a, b, localT;
+
+  if (cycle < 0.5) {
+    // Purple → Blue
+    a = hexToRgb('#8B5CF6');
+    b = hexToRgb('#3155FF');
+    localT = cycle / 0.5;
+
+  } else if (cycle < 0.85) {
+    // Blue → Yellow
+    a = hexToRgb('#3155FF');
+    b = hexToRgb('#F4C95D');
+    localT = (cycle - 0.5) / 0.35;
+
+  } else {
+    // Yellow → Purple
+    a = hexToRgb('#F4C95D');
+    b = hexToRgb('#8B5CF6');
+    localT = (cycle - 0.85) / 0.15;
+  }
+
+    const r = Math.round(a[0] + (b[0] - a[0]) * localT);
+    const g = Math.round(a[1] + (b[1] - a[1]) * localT);
+    const bl = Math.round(a[2] + (b[2] - a[2]) * localT);
+
+    return `rgba(${r}, ${g}, ${bl}, ${HP.opacity})`;
   }
 
   function applyStrokeStyle(t) {
