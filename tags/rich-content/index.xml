@@ -2,8 +2,8 @@
 &lt;h2 id="x-simple-shortcode"&gt;X Simple Shortcode&lt;/h2&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;{{&amp;lt; tweet user=&amp;#34;GoHugoIO&amp;#34; id=&amp;#34;1315233626070503424&amp;#34; &amp;gt;}}
 &lt;/code&gt;&lt;/pre&gt;&lt;br&gt;
-&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Profile is a customizable single-page portfolio theme for Hugo featuring a contact form and blog. Made by &lt;a href="https://twitter.com/gurusabarishh?ref_src=twsrc%5Etfw"&gt;@gurusabarishh&lt;/a&gt;.&lt;a href="https://t.co/KwYcwfdy16"&gt;https://t.co/KwYcwfdy16&lt;/a&gt;&lt;/p&gt;&amp;mdash; GoHugo.io (@GoHugoIO) &lt;a href="https://twitter.com/GoHugoIO/status/1315233626070503424?ref_src=twsrc%5Etfw"&gt;October 11, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Profile is a customizable single-page portfolio theme for Hugo featuring a contact form and blog. Made by &lt;a href="https://x.com/gurusabarishh?ref_src=twsrc%5Etfw"&gt;@gurusabarishh&lt;/a&gt;.&lt;a href="https://t.co/KwYcwfdy16"&gt;https://t.co/KwYcwfdy16&lt;/a&gt;&lt;/p&gt;&amp;mdash; GoHugo.io (@GoHugoIO) &lt;a href="https://x.com/GoHugoIO/status/1315233626070503424?ref_src=twsrc%5Etfw"&gt;October 11, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 
 
 &lt;br&gt;
