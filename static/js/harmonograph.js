@@ -26,7 +26,7 @@ const HP = {
   scale: 0.42,      // fraction of viewport min-dimension used for the drawing
 
   // --- Color ---
-  opacity:    0.4,        // stroke opacity (0–1)
+  opacity:    0.34,        // stroke opacity (0–1)
   lineWidth:  1.7,        // stroke width in pixels
   colorTwo:   '#F4C95D',  // second gradient color (teal accent); set equal to primary for no gradient
   colorBands: 10000,         // number of color segments along the curve (1 = solid single color)
